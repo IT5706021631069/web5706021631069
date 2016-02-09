@@ -74,7 +74,7 @@
         <tr>
             <td colspan="2" align="center">
               <input type="submit" value="   OK   "/>
-              <input type="reset" value="   Reset   "/>
+              <input type="reset" value="   Clear   "/>
             </td>
         </tr>
         </table>
