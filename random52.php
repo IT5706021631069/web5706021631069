@@ -7,14 +7,29 @@
 <body>
   <table width="80%" align="center" border="1">
 <?php
-
+$cout = 52;
+$co = 0;
+/////////////////////////////////////
 for ($i=1 ; $i <= 13 ;$i++){
-
-  echo "<tr>";
+ echo "<tr>";
   for ($c=1 ; $c <= 4 ;$c++){
-    //for($ch
-   $v[$c] = rand(0,100);
-   echo "<td><center> $v[$c] </center></td>" ;
+/////////////////////////////////////////////////
+$datas[$co] = rand(1,$cout);
+$r=0;
+while($r<$co)
+{
+  if ($datas[$co] == $datas[$r])
+  {
+    $datas[$co] = rand(1,$cout);
+    $r = 0;
+  }
+  else{
+    $r++;
+  }
+}
+///////////////////////////////////////////////
+ echo "<td><center>$datas[$co]</center></td>" ;
+ $co++;
  }
  echo " </tr> " ;
  }
